@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oro Punto | Compramos tu Oro al Mejor Precio</title>
+  <meta name="description" content="En Oro Punto compramos tu oro por pieza o peso al mejor precio del mercado. Proceso rápido, seguro y transparente en Guatemala." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Oro<strong>Punto</strong></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">¿Cómo funciona?</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto" class="btn-nav">Contáctanos</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#servicios">Servicios</a>
+      <a href="#como-funciona">¿Cómo funciona?</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contáctanos</a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Comprando oro hoy en Guatemala
+      </div>
+      <h1 class="hero-title">
+        Tu oro vale más<br />
+        <span class="gold-text">de lo que crees</span>
+      </h1>
+      <p class="hero-subtitle">
+        Compramos oro por pieza o peso al mejor precio del mercado.<br />
+        Proceso transparente, pago inmediato, sin complicaciones.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn-primary">
+          Vender mi oro ahora
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#como-funciona" class="btn-ghost">Ver cómo funciona</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">+5,000</span>
+          <span class="stat-label">clientes satisfechos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24h</span>
+          <span class="stat-label">pago garantizado</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">precio justo</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SERVICIOS
+  ═══════════════════════════════════════ -->
+  <section class="section servicios" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lo que compramos</span>
+        <h2 class="section-title">Compramos <span class="gold-text">todo tipo de oro</span></h2>
+        <p class="section-desc">No importa el estado ni la forma, si es oro nosotros lo compramos.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="18" stroke="currentColor" stroke-width="3"/>
+              <circle cx="32" cy="32" r="8" fill="currentColor" opacity="0.3"/>
+              <path d="M32 14V10M32 54V50M50 32H54M10 32H14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Monedas de oro</h3>
+          <p>Compramos monedas antiguas y modernas, de cualquier denominación y procedencia.</p>
+        </div>
+        <div class="service-card featured">
+          <div class="service-badge">Más solicitado</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="12" y="22" width="40" height="24" rx="4" stroke="currentColor" stroke-width="3"/>
+              <path d="M20 22V18a12 12 0 0124 0v4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="32" cy="34" r="4" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Joyería en desuso</h3>
+          <p>Aretes, collares, pulseras, anillos rotos o en buen estado. Los compramos todos.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 48L32 16L48 48H16Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M22 36H42" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Oro por gramos</h3>
+          <p>Pesamos y cotizamos tu oro al precio del día, pagando lo justo por cada gramo.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 12L14 24V40L32 52L50 40V24L32 12Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M32 12V52M14 24L50 40M50 24L14 40" stroke="currentColor" stroke-width="2" stroke-opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Piezas dentales</h3>
+          <p>Incrustaciones y piezas dentales de oro con valuación profesional e inmediata.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" y="28" width="28" height="20" rx="3" stroke="currentColor" stroke-width="3"/>
+              <path d="M24 28V22a8 8 0 0116 0v6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M32 36v4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Cadenas y dijes</h3>
+          <p>Cadenas dañadas, dijes sueltos, medallas. Cualquier pieza tiene valor para nosotros.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="28" r="12" stroke="currentColor" stroke-width="3"/>
+              <path d="M24 40L20 52H44L40 40" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M28 28h8M32 24v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Otros artículos de oro</h3>
+          <p>¿Tienes algo diferente? Consúltanos. Si es oro, lo valoramos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       COMO FUNCIONA
+  ═══════════════════════════════════════ -->
+  <section class="section como-funciona" id="como-funciona">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Simple y rápido</span>
+        <h2 class="section-title">¿Cómo funciona?</h2>
+        <p class="section-desc">Vender tu oro nunca fue tan fácil. Solo sigue estos 3 pasos.</p>
+      </div>
+      <div class="steps-wrapper">
+        <div class="steps-line"></div>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <div class="step-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 32L20 8L32 32H8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                  <path d="M13 24H27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Trae tu oro</h3>
+              <p>Lleva tus piezas a nuestro punto de compra o contáctanos para coordinar una visita.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <div class="step-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="8" y="16" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M14 16V12a6 6 0 0112 0v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="20" cy="24" r="3" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3>Valuación gratuita</h3>
+              <p>Pesamos y analizamos tus piezas con equipos certificados. Te decimos el quilataje y el valor exacto.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <div class="step-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="10" width="28" height="20" rx="4" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M6 16h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M12 24h4M24 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Pago inmediato</h3>
+              <p>Si aceptas la oferta, recibes tu pago en el momento. En efectivo o transferencia bancaria.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       POR QUÉ ELEGIRNOS
+  ═══════════════════════════════════════ -->
+  <section class="section nosotros" id="nosotros">
+    <div class="container nosotros-inner">
+      <div class="nosotros-visual">
+        <div class="visual-card main-card">
+          <div class="visual-icon">◈</div>
+          <p class="visual-label">Precio del día</p>
+          <p class="visual-price">Cotización en tiempo real</p>
+        </div>
+        <div class="visual-card accent-card top-right">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          <span>Proceso verificado</span>
+        </div>
+        <div class="visual-card accent-card bottom-left">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>100% seguro</span>
+        </div>
+        <div class="visual-rings">
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+          <div class="ring r3"></div>
+        </div>
+      </div>
+      <div class="nosotros-content">
+        <span class="section-tag">¿Por qué elegirnos?</span>
+        <h2 class="section-title">La empresa de compra de oro <span class="gold-text">más confiable</span></h2>
+        <p class="nosotros-desc">En Oro Punto llevamos años comprando oro con transparencia y honestidad. Nuestro compromiso es darte el mejor precio del mercado con un proceso completamente seguro.</p>
+        <ul class="benefits-list">
+          <li>
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            </div>
+            <div>
+              <strong>Precio justo garantizado</strong>
+              <span>Cotizamos según el precio internacional del oro del día.</span>
+            </div>
+          </li>
+          <li>
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <strong>Atención rápida</strong>
+              <span>Tu valuación lista en minutos, sin citas previas.</span>
+            </div>
+          </li>
+          <li>
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <strong>Total confidencialidad</strong>
+              <span>Tu información y transacción son 100% privadas.</span>
+            </div>
+          </li>
+          <li>
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></svg>
+            </div>
+            <div>
+              <strong>Pago inmediato</strong>
+              <span>Efectivo o transferencia al momento de cerrar el trato.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIO / TRUST BAR
+  ═══════════════════════════════════════ -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Empresa legalmente registrada</span>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+          <span>Báscula certificada</span>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          <span>+5,000 clientes satisfechos</span>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>Mejor precio garantizado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACTO
+  ═══════════════════════════════════════ -->
+  <section class="section contacto" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hablemos</span>
+        <h2 class="section-title">¿Listo para vender tu oro?</h2>
+        <p class="section-desc">Déjanos tus datos y nos comunicamos contigo a la brevedad.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>También puedes contactarnos por:</h3>
+          <div class="contact-methods">
+            <a href="https://wa.me/50200000000" class="contact-method whatsapp" target="_blank">
+              <div class="cm-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <span class="cm-label">WhatsApp</span>
+                <span class="cm-value">Escríbenos ahora</span>
+              </div>
+            </a>
+            <a href="tel:+50200000000" class="contact-method phone">
+              <div class="cm-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 10.77a19.79 19.79 0 01-3.07-8.67A2 2 0 012.8 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.77a16 16 0 006.29 6.29l1.14-1.14a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="cm-label">Teléfono</span>
+                <span class="cm-value">+502 0000-0000</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono">Teléfono <span class="required">*</span></label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+502 0000-0000" required />
+              </div>
+              <div class="form-group">
+                <label for="correo">Correo electrónico <span class="required">*</span></label>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto / Descripción <span class="optional">(opcional)</span></label>
+              <textarea id="asunto" name="asunto" rows="4" placeholder="Cuéntanos sobre las piezas que deseas vender..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Enviar mensaje</span>
+              <span class="btn-loading" style="display:none">
+                <svg class="spin" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                Enviando...
+              </span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="form-msg" id="formMsg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">Oro<strong>Punto</strong></span>
+        </a>
+        <p>Compramos tu oro al mejor precio del mercado. Proceso seguro, rápido y transparente.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">¿Cómo funciona?</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>Guatemala, Guatemala</p>
+        <p>+502 0000-0000</p>
+        <p>info@oropunto.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 OroP​unto. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
