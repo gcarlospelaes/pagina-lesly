@@ -122,6 +122,7 @@ form.addEventListener('submit', async (e) => {
     const res = await fetch(SHEET_URL, {
       method: 'POST',
       body: params,
+      mode: 'no-cors',
     });
 
     showMsg('✅ Mensaje enviado correctamente. Nos comunicaremos contigo pronto.', 'success');
