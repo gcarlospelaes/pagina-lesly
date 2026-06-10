@@ -4,7 +4,7 @@
    Reemplaza SHEET_URL con la URL de tu
    Google Apps Script Web App (ver README)
 ═══════════════════════════════════════ */
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwpctWetnAT5OKHzUy1eOsRW1xKlqerMpz8zWV353GU1GtsZUxscZCYRLL5emXCgdcNtQ/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycby65jENLUpgP3xvkCBPcTTTxyth_2zZjbG8-YV8Jt1bQ3kAZ4YZCkVhLM-g70jD0p5Ncg/exec';
 
 /* ═══════════════════════════════════════
    NAVBAR — scroll effect
