@@ -32,6 +32,13 @@
 
 const SHEET_NAME = 'Contactos';
 
+// Maneja peticiones OPTIONS (preflight CORS)
+function doGet(e) {
+  return ContentService
+    .createTextOutput(JSON.stringify({ result: 'ok' }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
 function doPost(e) {
   try {
     const sheet = SpreadsheetApp
@@ -39,30 +46,30 @@ function doPost(e) {
       .getSheetByName(SHEET_NAME);
 
     if (!sheet) {
-      return ContentService
-        .createTextOutput(JSON.stringify({ result: 'error', message: 'Hoja no encontrada' }))
-        .setMimeType(ContentService.MimeType.JSON);
+      return makeResponse({ result: 'error', message: 'Hoja no encontrada' });
     }
 
     const params = e.parameter;
 
-    const fecha   = params.fecha   || new Date().toLocaleString('es-GT');
+    const fecha    = params.fecha    || new Date().toLocaleString('es-GT');
     const telefono = params.telefono || '';
     const correo   = params.correo   || '';
     const asunto   = params.asunto   || '';
 
-    // Agregar fila al sheet
     sheet.appendRow([fecha, telefono, correo, asunto]);
 
-    return ContentService
-      .createTextOutput(JSON.stringify({ result: 'success' }))
-      .setMimeType(ContentService.MimeType.JSON);
+    return makeResponse({ result: 'success' });
 
   } catch (err) {
-    return ContentService
-      .createTextOutput(JSON.stringify({ result: 'error', message: err.toString() }))
-      .setMimeType(ContentService.MimeType.JSON);
+    return makeResponse({ result: 'error', message: err.toString() });
   }
+}
+
+function makeResponse(data) {
+  const output = ContentService
+    .createTextOutput(JSON.stringify(data))
+    .setMimeType(ContentService.MimeType.JSON);
+  return output;
 }
 
 // Función de prueba (opcional) — ejecuta desde el editor para verificar

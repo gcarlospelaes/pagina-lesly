@@ -4,7 +4,7 @@
    Reemplaza SHEET_URL con la URL de tu
    Google Apps Script Web App (ver README)
 ═══════════════════════════════════════ */
-const SHEET_URL = 'TU_GOOGLE_APPS_SCRIPT_URL_AQUI';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwpctWetnAT5OKHzUy1eOsRW1xKlqerMpz8zWV353GU1GtsZUxscZCYRLL5emXCgdcNtQ/exec';
 
 /* ═══════════════════════════════════════
    NAVBAR — scroll effect
@@ -112,26 +112,16 @@ form.addEventListener('submit', async (e) => {
   // Estado de carga
   setLoading(true);
 
-  // Si aún no se configuró la URL, mostrar mensaje de ayuda
-  if (SHEET_URL === 'TU_GOOGLE_APPS_SCRIPT_URL_AQUI') {
-    await fakeSend();
-    showMsg('✅ Mensaje enviado correctamente. Nos comunicaremos contigo pronto.', 'success');
-    form.reset();
-    setLoading(false);
-    return;
-  }
-
   try {
-    const payload = new FormData();
-    payload.append('telefono', telefono);
-    payload.append('correo', correo);
-    payload.append('asunto', asunto || '(Sin descripción)');
-    payload.append('fecha', new Date().toLocaleString('es-GT', { timeZone: 'America/Guatemala' }));
+    const params = new URLSearchParams();
+    params.append('telefono', telefono);
+    params.append('correo', correo);
+    params.append('asunto', asunto || '(Sin descripción)');
+    params.append('fecha', new Date().toLocaleString('es-GT', { timeZone: 'America/Guatemala' }));
 
     const res = await fetch(SHEET_URL, {
       method: 'POST',
-      body: payload,
-      mode: 'no-cors',  // Google Apps Script requiere no-cors
+      body: params,
     });
 
     showMsg('✅ Mensaje enviado correctamente. Nos comunicaremos contigo pronto.', 'success');
