@@ -1140,11 +1140,132 @@ a { text-decoration: none; color: inherit; }
   .footer-brand { grid-column: 1 / -1; }
 }
 
+/* ═══════════════════════════════════════
+   HORARIOS
+═══════════════════════════════════════ */
+.horarios {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--dark-700);
+  border: 1px solid var(--dark-500);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+.horario-icon {
+  color: var(--gold-300);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.horario-info h4 {
+  font-family: var(--font-display);
+  color: var(--white);
+  font-size: 1rem;
+  margin: 0 0 12px;
+}
+.horario-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 6px;
+}
+.horario-dia {
+  color: var(--gray-300);
+  font-size: 0.9rem;
+}
+.horario-hora {
+  color: var(--gold-300);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* ═══════════════════════════════════════
+   KILATAJES & VEHÍCULOS
+═══════════════════════════════════════ */
+.kilatajes { background: var(--dark-900); }
+
+.kilatajes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+
+.kilataje-card {
+  background: var(--dark-700);
+  border: 1px solid var(--dark-500);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  transition: var(--transition);
+}
+.kilataje-card:hover {
+  border-color: var(--gold-400);
+  box-shadow: var(--shadow-gold);
+  transform: translateY(-4px);
+}
+
+.kilataje-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  color: var(--gold-300);
+}
+.kilataje-header h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--white);
+  margin: 0;
+}
+
+.kilataje-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.badge.gold {
+  background: rgba(232,168,16,.12);
+  color: var(--gold-300);
+  border: 1px solid rgba(232,168,16,.25);
+}
+.badge.gold.featured {
+  background: var(--gold-400);
+  color: var(--dark-900);
+  border-color: var(--gold-400);
+}
+.badge.silver {
+  background: rgba(181,169,144,.12);
+  color: var(--gray-200);
+  border: 1px solid rgba(181,169,144,.25);
+}
+.badge.silver.featured {
+  background: var(--gray-300);
+  color: var(--dark-900);
+  border-color: var(--gray-300);
+}
+.badge.vehicle {
+  background: rgba(255,255,255,.06);
+  color: var(--gray-200);
+  border: 1px solid rgba(255,255,255,.12);
+  font-size: 0.9rem;
+  padding: 8px 18px;
+}
+
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
 
   .services-grid { grid-template-columns: 1fr; }
+  .kilatajes-grid { grid-template-columns: 1fr; }
   .steps-grid { grid-template-columns: 1fr; gap: 24px; }
   .steps-line { display: none; }
 
